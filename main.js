@@ -24,9 +24,16 @@ function main()
     var material = new THREE.MeshLambertMaterial({ color: 0xffffff });
     var cube = new THREE.Mesh( geometry, material );
     scene.add( cube );
+<<<<<<< HEAD
+
+    var light = new THREE.PointLight( 0xffffff );
+    light.position.set( 1, 1, 1 );
+    scene.add( light );
+=======
     var light = new THREE.PointLight(0xffffff);
     light.position.set(1, 1, 1);
     scene.add(light);
+>>>>>>> 0a4e0dbb64e302a39177683de0f8dcc331d58050
 
     loop();
 
